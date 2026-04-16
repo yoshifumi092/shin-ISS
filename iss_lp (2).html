@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS - インサイドセールス講座 スタンダードプラン</title>
+    <style>
+        /* 全体スタイル */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+        /* セクション共通 */
+        section { padding: 40px 20px; border-bottom: 1px solid #eee; }
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        /* ヘッダー・メイン */
+        .header-box {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero-title { font-size: 36px; letter-spacing: 0.1em; margin: 0; color: #d4af37; }
+
+        /* 商品情報・価格 */
+        .product-card {
+            border: 2px solid #d4af37;
+            padding: 30px;
+            margin: 20px 0;
+            background: #fffdfa;
+        }
+        .product-name { font-size: 22px; font-weight: bold; margin-bottom: 15px; border-left: 5px solid #d4af37; padding-left: 15px; }
+        .price-box {
+            text-align: right;
+            font-size: 32px;
+            color: #e60000;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* 詳細項目 */
+        .detail-grid { margin-top: 30px; }
+        .detail-item { display: flex; align-items: flex-start; margin-bottom: 25px; border-bottom: 1px dashed #ccc; padding-bottom: 20px; }
+        .detail-icon { font-size: 28px; width: 50px; flex-shrink: 0; text-align: center; }
+        .detail-label { font-weight: bold; font-size: 18px; margin-bottom: 5px; color: #d4af37; }
+
+        /* 決済セクション */
+        .payment-section { background: #fdfaf0; text-align: center; }
+        .method-title { font-size: 20px; font-weight: bold; margin: 20px 0; display: flex; align-items: center; justify-content: center; }
+        .method-title::before { content: "▶"; font-size: 14px; margin-right: 8px; color: #d4af37; }
+        
+        .btn-payment {
+            display: block;
+            max-width: 450px;
+            margin: 15px auto;
+            transition: 0.3s;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 18px 20px;
+            border-radius: 4px;
+            text-align: center;
+            position: relative;
+        }
+        .btn-payment::after {
+            content: "›";
+            position: absolute;
+            right: 20px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        .btn-payment:hover { opacity: 0.8; transform: scale(1.02); }
+        .btn-credit { background: #2bbcb0; }
+        .btn-bank { background: #f0854a; }
+
+        /* 安全の取り組み */
+        .safety-box { background: #fff; padding: 30px; font-size: 14px; color: #555; border: 1px solid #ddd; border-radius: 5px; margin: 20px 0; }
+        .norton-img { width: 120px; margin: 20px auto; }
+
+        /* フッター */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+        .footer-links { margin-bottom: 25px; }
+        .footer-links a { color: #fff; text-decoration: none; margin: 0 15px; border-bottom: 1px solid #666; padding-bottom: 2px; }
+        .footer-links a:hover { color: #d4af37; border-color: #d4af37; }
+        .company-info { margin-top: 20px; line-height: 1.8; color: #bbb; }
+
+        /* レスポンシブ */
+        @media (max-width: 600px) {
+            .detail-item { flex-direction: column; align-items: center; text-align: center; }
+            .price-box { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header-box">
+        <h1 class="hero-title">ISS</h1>
+        <p>Inside Sales Standard Plan</p>
+    </header>
+
+    <section>
+        <h2 class="section-title">ご購入手続きに進む</h2>
+        <p>注文する商品をご確認いただき、ご希望の決済方法のボタンを押して次にお進みください。</p>
+
+        <div class="product-card">
+            <div class="product-name">ISS スタンダードプラン</div>
+            <p>本商品は、インサイドセールス講座です。具体的な営業テクニックのみならず、セールス力の基盤にある人間力向上をメインとした講座となっております。</p>
+            <div class="price-box">798,000円（税込）</div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">商品の詳細内容</h2>
+        
+        <div class="detail-grid">
+            <div class="detail-item">
+                <div class="detail-icon">📄</div>
+                <div>
+                    <div class="detail-label">商品の内容</div>
+                    <p>動画教材と個別サポートを提供します。</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <div class="detail-icon">📲</div>
+                <div>
+                    <div class="detail-label">提供方法</div>
+                    <p>公式LINEより個別相談予約 → オンライン個別相談 → プログラムお申込み</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <div class="detail-icon">⏰</div>
+                <div>
+                    <div class="detail-label">講座の回数や時間</div>
+                    <p>約10時間のオンデマンド動画＋必要に応じたオンライン個別サポート</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <div class="detail-icon">🤝</div>
+                <div>
+                    <div class="detail-label">サポート内容</div>
+                    <p>LINEによる個別相談、質問対応。ロープレ対応。専用コミュニティでの交流、情報共有。</p>
+                    <p><strong>サポート期間：6ヶ月</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-section">
+        <h2 class="section-title">お支払い方法</h2>
+        
+        <div class="method-title">クレジットカード</div>
+        <p><small>（VISA / MasterCard / JCB）</small></p>
+        <a href="https://www.infotop.jp/order.php?iid=XXXXX" class="btn-payment btn-credit">クレジット決済を希望</a>
+
+        <div class="method-title">銀行振込</div>
+        <a href="https://www.infotop.jp/order.php?iid=XXXXX" class="btn-payment btn-bank">銀行振込決済を希望</a>
+
+        <div class="safety-box">
+            <h3 style="margin-top:0">安全のための取り組み</h3>
+            <p>注文する商品をご確認いただき、よろしければご注文者情報を入力して、ご希望の決済方法のボタンを押して次にお進みください。</p>
+            <p>お客様情報はSSL暗号化技術を利用して厳重に送信いたします。また、ご入力いただいたカード情報はインフォトップに決済代行を委託しております。当社では保存されませんのでご安心ください。</p>
+            <p><small>転売など、当社が不都合と判断した場合はご購入をお断りさせていただくことがございます。予めご了承ください。</small></p>
+            <div class="norton-img" style="border:1px solid #ccc; border-radius:3px; padding:10px 20px; display:flex; align-items:center; gap:8px; width:fit-content; margin:20px auto; background:#fff;">
+                <span style="color:#d4af37; font-size:18px;">✓</span>
+                <div style="text-align:left;">
+                    <div style="font-size:13px; font-weight:bold;">Norton</div>
+                    <div style="font-size:10px; color:#888;">powered by digicert</div>
+                </div>
+            </div>
+        </div>
+
+        <p style="font-size: 13px; color: #666; margin-top: 20px;">
+            本商品は、必ずしも購入者様の利益や効果を保証したものではございません。
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://yoshifumi092.github.io/shin-tokusho/" target="_blank">特定商取引法に基づく表記</a>
+            <a href="https://buyma-conoha.shop/?clp=プライバシーポリシー-2" target="_blank">プライバシーポリシー</a>
+        </div>
+
+        <div class="company-info">
+            <strong>株式会社DARE</strong><br>
+            代表取締役：福島悠太<br>
+            所在地：〒537-0024 大阪市東成区東小橋1－7－20 玉造BASE701<br>
+            お問い合わせ：dare.inc523@gmail.com / 080-6362-4473
+        </div>
+
+        <p style="margin-top: 30px; color: #666;">&copy; 2026 株式会社DARE All Rights Reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
